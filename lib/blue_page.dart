@@ -28,7 +28,7 @@ class _BluePageState extends State<BluePage> {
 
   scan() {
     // Start scanning
-    flutterBlue.startScan(timeout: Duration(seconds: 4));
+    flutterBlue.startScan(timeout: Duration(seconds: 100));
 
 // Listen to scan results
     scanSubscription = flutterBlue.scanResults.listen((results) {
